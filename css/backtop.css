@@ -1,0 +1,26 @@
+.btBtn {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    background: rgba(0,0,0,.2);
+    z-index: 999;
+    border-radius: 5px;
+    overflow: hidden;
+    display: none;
+}
+.btBtn a {
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    text-indent: -9999px;
+    background: url(../images/2.0/gotop.png) center 19px no-repeat;
+    display: block;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    transition: 0.3s;
+}
+.btBtn a:hover {
+    background: url(../images/2.0/gotop.png) center -30px no-repeat;
+}

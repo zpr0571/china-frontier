@@ -1,0 +1,77 @@
+/*通用*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	/*font: 14px/1.5 Tahoma,Helvetica,Arial,"\5b8b\4f53",sans-serif;*/
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	color: #ffdf00;
+}
+#foots{
+	height: 242px;
+	background: #2c2c2c;
+    color: #afafaf;
+    padding: 30px 0;
+    font-size: 14px;
+    overflow: hidden;
+	color: #afafaf;
+}
+#foot1{
+	position: relative;
+	top: 242px;
+	height: 242px;
+	opacity: 0.1;
+}
+#footList{
+	width: 1180px;
+	margin: auto;
+}
+#footList {
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+#foots a{
+	color: #afafaf;
+}
+.listL ul{
+	float: left;
+	width: 400px;
+}
+.listR ul{
+	float: right;
+}
+.listR ul li{
+	float: left;
+	margin-right: 45px;
+    text-align: center;
+    line-height: 50px;
+}
+.listL ul li:first-child{
+	color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+    
+}
+.listL ul li{
+	line-height: 24px;
+}
+.listR ul li img{
+	width: 100px;
+	border-radius: 3px;
+}
+.copyR{
+	width: 1180px;
+	margin: auto;
+	line-height: 26px;
+	padding: 15px 0 0 0;
+	border-top: 1px solid ;
+}

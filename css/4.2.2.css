@@ -1,0 +1,390 @@
+/*通用*/
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	color: #757575;
+	font: 14px/1.5 Tahoma,Helvetica,Arial,"\5b8b\4f53",sans-serif;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #838383;
+}
+a:hover{
+	color: #ff8a00;
+}
+h2{
+	font-size: 30px;
+	color: #5d5d5d;
+	font-weight: normal;
+}
+h2+p{
+	font-size: 18px;
+    color: #979797;
+    padding: 15px 0;
+}
+/*头部*/
+header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+	background-color: #303030;
+}
+.header1{
+	transition:all 0.3s;
+	height: 100px;
+}
+.header2{
+	transition:all 0.3s;
+	height: 80px;
+	background-color: rgba(48,48,48,0.8);
+}
+.header2 .logo>img{
+	margin-top: 15px;
+}
+.header2 .mainN>ul>li>a{
+	transition:all 0.3s;
+	line-height: 80px;
+	height: 80px;
+
+}
+#header{
+	width: 1180px;
+	top: -100px;
+	position: absolute;
+	left: 50%;
+	margin-left: -590px;
+	filter:alpha(opacity:100);
+	opacity: 1;
+}
+.logo>img{
+	float: left;
+	margin-top: 25px;
+}
+.mainN{
+	float: right;
+}
+.mainN>ul>li{
+	float: left;
+	position: relative;
+}
+.mainN>ul>li>a{
+	transition:all 0.3s;
+	display: block;
+	line-height: 100px;
+	height: 100px;
+	color: white;
+	font-size: 16px;
+	padding: 0 20px;
+}
+.mainN>ul>li.mainN1>a{
+	padding-right: 25px;
+}
+.active{
+	background: #ffdf00;
+}
+.mainN>ul>li>a:hover{
+	color: #000000;
+    /*background: #ffdf00;*/
+    transition: background 0.1s ease-in-out;
+	-moz-transition: background 0.1s ease-in-out;	/* Firefox 4 */
+	-webkit-transition: background 0.1s ease-in-out;	/* Safari 和 Chrome */
+}
+.mainN>ul>li>.menu{
+	display: none;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	width: 400px;
+	border-top: 4px solid  #ffdf00;
+	padding: 15px 30px;
+	height: 166px;
+	background-color: #000;
+	opacity: 0.7;
+	 filter:alpha(opacity=70);
+	 -moz-opacity:0.7;
+	 -khtml-opacity: 0.7;
+}
+.menu1{
+	float: left;
+}
+.menu1:first-child{
+	width: 140px;
+}
+.menu1>ul>li>a{
+	height: 24px;
+	line-height: 24px;
+	color: #FFFFFF;
+}
+.menu1{
+	margin-right: 50px;
+}
+.menu1:last-child{
+	margin: 0;
+}
+.menu1>ul>li:first-child{
+	font-size: 16px;
+	line-height: 30px;
+	border-bottom: 1px solid #fff;
+	margin-bottom: 13px;
+}
+.menu1>ul>li{
+	font-size: 14px;
+	padding: 3px 0;
+	line-height: 25px;
+}
+.menu1>ul>li>a{
+	margin: 5px;
+}
+.menu1>ul>li>a:hover{
+	color: #ffdf00;
+}
+.mainN>ul>li>.menus3{
+	border-top:none;
+	width: 109px;
+	position: absolute;
+	top: 100%;
+	right: 0;
+	height: 170px;
+	background-color: #000;
+	opacity: 0.7;
+	padding: 15px 0;
+}
+.mainN>ul>li>.menus3 li{
+	font-size: 16px;
+	line-height: 24px;
+	padding: 10px 0;
+	text-align: center;
+}
+.mainN>ul>li>.menus3 li>a{
+	line-height: 24px;
+	height: 24px;
+	color: #fff;
+}
+.mainN>ul>li>.menus3 li>a:hover{
+	color: #ffdf00;	
+}
+/*小三角*/
+.mainN>ul>li>i{
+	position: absolute;
+    top: 50%;
+    right: 10px;
+    /*margin-top: -2px;*/
+    width: 0;
+    height: 0;
+    line-height: 0;
+    border-width: 4px;
+    border-style: solid dashed dashed;
+    border-color: #fff transparent transparent;
+}
+.mainN>ul>li:hover>i{
+	border-color: #000 transparent transparent;
+	 -webkit-transform-origin: 4px 2px;
+	 -moz-transform-origin: 4px 2px;
+	 -ms-transform-origin: 4px 2px;
+	 -o-transform-origin: 4px 2px;
+	 transform-origin: 4px 2px;
+	 transform: rotate(-180deg);
+	 transition:transform 0.1s; 
+
+}
+@keyframes fadeInUp
+{
+	from {padding-top: 180px;
+	opacity: 0;}
+	to {padding-top: 0px;
+	opacity: 1;}
+}
+@-moz-keyframes fadeInUp /* Firefox */
+{
+	from {padding-top: 180px;
+	opacity: 0;}
+	to {padding-top: 0px;
+	opacity: 1;
+	 filter:alpha(opacity=100);
+	}
+}
+
+@-webkit-keyframes fadeInUp /* Safari 和 Chrome */
+{
+	from {padding-top: 180px;
+	opacity: 0;}
+	to {padding-top: 0px;
+	opacity: 1;}
+}
+
+@-o-keyframes fadeInUp /* Opera */
+{
+	from {padding-top: 180px;
+	opacity: 0;}
+	to {padding-top: 0px;
+	opacity: 1;}
+}
+
+/*技术*/
+#jishu{
+	overflow: hidden;
+}
+.menus1{
+	width: 1180px;
+	margin: auto;
+}
+.menus1 li a:hover{
+	color: #ff8a00;
+}
+.menus1 li a:hover+i{
+	border-top: #ff8a00  4px solid;
+}
+#header .menus1  li{
+	margin-right: 0px;
+}
+.menus1 li{
+	cursor: pointer;
+	float: left;
+	padding-right: 15px;
+	margin-right: 50px;
+	line-height: 50px;
+	position: relative;
+}
+.menus1 li i{
+	display: block;
+	position: absolute;
+    top: 23px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    /*border-width: 4px;*/
+    border:4px solid transparent;
+    border-top: #838383  4px solid;
+}
+#dianbo{
+	overflow: hidden;
+	border-bottom: 1px solid #ebebeb;
+	border-top: 1px solid #ebebeb;
+}
+#wendingfuwu{
+	height: 49px;
+	width: 100%;
+	border-bottom: 1px solid #ebebeb;
+	display: none;
+}
+#wending{
+	overflow: hidden;
+}
+.xian{
+	width: 100%;
+	height: 1px;
+	background-color:#ebebeb;
+}
+
+/*一*/
+#chuangxin {
+	position: relative;
+	margin: 60px 0;
+	height: 370px;
+	overflow: hidden;
+}
+.text11{
+	position: absolute;
+	left:-600px;
+	width: 600px;
+	
+	text-align: center;
+	opacity: 0.1;
+}
+.text12{
+	position: absolute;
+	right:-525px;
+	width: 525px;
+	opacity: 0.1;
+	margin-top: 60px;
+}
+.text12>h2{
+	font-size: 24px;
+	color: #565656;
+	/*padding-bottom: 20px;*/
+}
+#chuangxin .text22{
+	margin-top: 100px;
+}
+ .text12>h2{
+	margin-left: 20px;
+}
+ .text12>a{
+	margin-left: 20px;
+	font-size: 16px;
+	color: #ff7e00;
+}
+.text12>ul{
+	overflow: hidden;
+	padding: 15px 0;
+}
+ .text12>ul>li{
+	font-size: 16px;
+	color: #828282;
+	line-height: 40px;
+	float: left;
+	margin-left: 20px;
+}
+
+/*二*/
+
+#liumei{
+	position: relative;
+	padding: 60px 0 0 0;
+	height: 400px;
+	overflow: hidden;
+	background: #f6f6f6;
+}
+#liumei .text11{
+	margin-top: 100px;
+}
+.text21{
+	position: absolute;
+	right:-600px;
+	width: 600px;
+	opacity: 0.1;
+	text-align: center;
+}
+
+.text22{
+	position: absolute;
+	left:-525px;
+	width: 525px;
+	opacity: 0.1;
+	
+}
+.text22>h2{
+	font-size: 24px;
+	color: #565656;
+	/*padding-bottom: 20px;*/
+}
+.text22>a{
+	font-size: 16px;
+	color: #ff7e00;
+}
+.text22>ul{
+	overflow: hidden;
+	padding: 15px 0;
+	width: 380px;
+}
+ .text22>ul>li{
+	font-size: 16px;
+	color: #828282;
+	line-height: 40px;
+	float: left;
+	margin-right: 30px;
+}
+
+.active1{
+	color: #ff8a00;
+}
+a.active1+i{
+	border-top: #ff8a00 4px solid;
+}
